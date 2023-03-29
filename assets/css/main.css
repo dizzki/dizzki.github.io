@@ -32,6 +32,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -45,6 +46,10 @@ a {
 a:hover {
   color: #406aff;
   text-decoration: none;
+}
+
+a:hover img{
+  opacity: 0.7;
 }
 
 h1,
@@ -1808,6 +1813,75 @@ padding: 0 50px;
 }
 
 /*--------------------------------------------------------------
+# Result Section
+--------------------------------------------------------------*/
+.result {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-secondary);
+  background-image: url("../img/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 120px 0 60px 0;
+}
+
+.result h2 {
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .result h2 {
+    font-size: 30px;
+  }
+}
+
+.result p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.result .stats-item {
+  padding: 30px;
+  width: 100%;
+}
+
+.result .stats-item span {
+  font-size: 32px;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.result .stats-item span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.result .stats-item p {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
@@ -1922,3 +1996,7 @@ padding: 0 50px;
   color: #fff;
 }
 
+.sketchfab-embed-wrapper iframe{
+	width: 100%;
+	height: 50vh;
+}
