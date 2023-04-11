@@ -621,7 +621,7 @@ padding: 0 50px;
   font-size: 18px;
   color: #132848;
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: start;
 }
 
 .featured-services .service-item .readmore {
@@ -1740,7 +1740,7 @@ padding: 0 50px;
 }
 
 .hero p {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 40px;
 }
