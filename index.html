@@ -22,15 +22,10 @@
 		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 		<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-		<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 		<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 		
 		<!-- Template Main CSS File -->
 		<link href="assets/css/main.css" rel="stylesheet">
-		
-		<!-- Подключаем CSS слайдера -->
-		<link rel="stylesheet" href="assets/css/simple-adaptive-slider.css">
 	</head>
 	
 	<body>
@@ -87,7 +82,7 @@
 								<div class="icon">
 									<img width="25%" src="assets/img/3d.png" alt="">
 								</div>
-								<p class="description">Процесс создания трехмерной модели человеческого тела с использованием технологий компьютерного зрения и компьютерной графики.</p>
+								<p class="description">Процесс создания трехмерной модели с использованием технологий компьютерного зрения и компьютерной графики.</p>
 							</div>
 						</div>
 						<!-- End Service Item -->
@@ -184,29 +179,9 @@
 					<h2>Процесс создания на примере платья</h2>
 				</div>
 				<div class="container">
-					<div class="itcss">
-						<div class="itcss__wrapper">
-							<div class="itcss__items">
-								<div class="itcss__item">
-									<div>
-										<img src="assets/img/cta-bg.jpg" class="img-fluid" alt="">
-									</div>
-								</div>
-								<div class="itcss__item">
-									<div>
-										<img src="assets/img/cta-bg.jpg" class="img-fluid" alt="">
-									</div>
-								</div>
-								<div class="itcss__item">
-									<div>
-										<img src="assets/img/cta-bg.jpg" class="img-fluid" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
-						<button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
-					</div>
+					<video controls>
+						<source src="assets/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video>
 				</div>
 				<div id="result"></div>
 			</section>
@@ -232,25 +207,9 @@
 		
 		<!-- Vendor JS Files -->
 		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 		<script src="assets/vendor/aos/aos.js"></script>
 		
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>
-
-		<!-- Подключаем JS слайдера -->
-		<script defer src="assets/js/simple-adaptive-slider.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				// активация слайдера
-				new ItcSimpleSlider('.itcss', {
-					loop: true,
-					autoplay: false,
-					swipe: true
-				});
-			});
-		</script>
 		</body>
 		</html>				
